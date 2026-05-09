@@ -1,0 +1,22 @@
+---
+- name: Создать рабочую директорию
+  command: mkdir -p /tmp/filter_demo
+  args:
+    creates: /tmp/filter_demo
+
+- name: Копировать файл серверной логики с правилами фильтрации
+  copy:
+    src: /home/runner/workspace/filter_module/filter_logic.py
+    dest: /tmp/filter_demo/filter_logic.py
+    mode: '0755'
+
+- name: Копировать файл веб-интерфейса
+  copy:
+    src: /home/runner/workspace/filter_module/templates/filter_module/index.html
+    dest: /tmp/filter_demo/index.html
+    mode: '0644'
+
+- name: Вывести подтверждение развёртывания
+  debug:
+    msg: "Программа фильтрации успешно развёрнута"
+

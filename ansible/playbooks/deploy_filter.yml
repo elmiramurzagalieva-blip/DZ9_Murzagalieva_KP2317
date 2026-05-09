@@ -1,0 +1,10 @@
+---
+- name: Развернуть программу фильтрации на серверах заказчика
+  hosts: all
+  become: no
+  gather_facts: no
+  roles:
+    - role: filter
+
+
+     

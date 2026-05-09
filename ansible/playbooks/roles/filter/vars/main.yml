@@ -1,0 +1,16 @@
+---
+filter_version: "v1.0.0"
+
+filter_blacklist_domains:
+  - "malicious.com"
+  - "spamlink.ru"
+  - "badad.net"
+  - "phish.xyz"
+  - "danger.org"
+
+filter_short_link_services:
+  - "bit.ly"
+  - "tinyurl.com"
+  - "goo.gl"
+  - "clck.ru"
+  - "ow.ly"
