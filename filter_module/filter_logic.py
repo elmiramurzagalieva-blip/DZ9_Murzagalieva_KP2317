@@ -8,6 +8,7 @@ BLACKLIST_DOMAINS = [
     "badad.net",
     "phish.xyz",
     "danger.org",
+    "new-malware.ru",   # добавлено по SCR-002
 ]
 #шаблоны подозрительных конструкций
 SUSPICIOUS_PATTERNS = [
